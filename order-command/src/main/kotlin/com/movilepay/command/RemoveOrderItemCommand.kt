@@ -3,9 +3,8 @@ package com.movilepay.command
 import org.axonframework.modelling.command.TargetAggregateIdentifier
 import java.util.UUID
 
-data class CreateOrderCommand(
+data class RemoveOrderItemCommand(
     @TargetAggregateIdentifier
     val orderId: UUID,
-    val customerName: String,
-    val address: String
+    val itemId: UUID
 )

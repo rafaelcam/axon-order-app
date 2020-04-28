@@ -5,6 +5,5 @@ import java.util.UUID
 data class OrderCreatedEvent(
     val orderId: UUID,
     val customerName: String,
-    val address: String,
-    val amount: Long
+    val address: String
 )

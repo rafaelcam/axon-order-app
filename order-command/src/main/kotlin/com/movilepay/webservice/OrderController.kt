@@ -28,7 +28,6 @@ class OrderController(commandBus: CommandBus) {
     fun create(@RequestBody request: CreateOrderRequest): ResponseEntity<Void> {
         val command = CreateOrderCommand(
             orderId = UUID.randomUUID(),
-            amount = request.amount,
             address = request.address,
             customerName = request.customerName
         )

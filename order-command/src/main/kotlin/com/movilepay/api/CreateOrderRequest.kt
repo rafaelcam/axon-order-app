@@ -2,6 +2,5 @@ package com.movilepay.api
 
 data class CreateOrderRequest(
     val customerName: String,
-    val address: String,
-    val amount: Long
+    val address: String
 )
